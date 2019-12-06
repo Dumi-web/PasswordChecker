@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PassTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-12-06T13:28:17" hostname="Area51s-MacBook-Pro.local" time="0.028">
+  <properties/>
+  <testcase name="passwordIsOkay()" classname="PassTest" time="0.02"/>
+  <testcase name="passwordIsValid()" classname="PassTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
