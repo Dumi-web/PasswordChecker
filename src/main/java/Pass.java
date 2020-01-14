@@ -51,6 +51,7 @@ public class Pass {
         }
         if(password.equals("") && password.length()<=8){
             result += "Try again : Password is never okay.";
+            count--;
         }
         return result;
     }
