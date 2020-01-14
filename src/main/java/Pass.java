@@ -26,33 +26,36 @@ public class Pass {
             }
         }
         if (name.equals(password)) {
-            result += "Error: Password Should exist.\n";
+            result += "Try again: Password Should exist.\n";
             count--;
         }
         if (password.length() <= 8) {
-            result += "Error: Password Should be longer than 8 Characters.\n";
+            result += "Try again: Password Should be longer than 8 Characters.\n";
             count--;
         }
          if (!hasNum) {
-            result += "Error: Password does not have a digit.\n";
+            result += "Try again: Password does not have a digit.\n";
             count--;
         }
          if (!hasCap) {
-            result += "Error: Password does not have uppercase.\n";
+            result += "Try again: Password does not have uppercase.\n";
             count--;
         }
          if (!hasLow) {
-            result += "Error: Password does not have lowercase.\n";
+            result += "Try again: Password does not have lowercase.\n";
             count--;
         }
         if (sMatcher.matches()) {
-            result += "Error: Password does not have special character.";
+            result += "Try again: Password does not have special character.\n";
             count--;
+        }
+        if(password.equals("") && password.length()<=8){
+            result += "Try again : Password is never okay.";
         }
         return result;
     }
-        public static boolean passwordIsOkay(){
-            if (count < 3) {
+        public static boolean passwordIsOkay(String password){
+            if (!password.equals("") && password.length()<=8) {
                 return false;
 
             } else {
