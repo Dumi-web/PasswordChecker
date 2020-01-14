@@ -23,6 +23,8 @@ class PassTest{
     }
     @Test
     void passwordIsOkay(){
-        assertTrue(Pass.passwordIsOkay());
+        Pass.passwordIsValid("Pou1!");
+        assertTrue(Pass.passwordIsOkay("P"));
+        assertFalse(Pass.passwordIsOkay("PAs"));
     }
 }
